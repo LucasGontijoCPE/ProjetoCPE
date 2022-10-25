@@ -2,8 +2,8 @@ import React from "react";
 
 function App() {
   return (
-    <div>
-      
+    <div className="Header">
+      <h1>CPE - Central de Produtos Esportivos</h1>
     </div>
   );
 }
