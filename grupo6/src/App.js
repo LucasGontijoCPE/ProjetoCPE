@@ -1,5 +1,6 @@
 import React from "react";
 import header from "./head"
+import footer from "./footer"
 
 function App() {
   return (

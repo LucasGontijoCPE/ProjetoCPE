@@ -2,9 +2,13 @@ import React from 'react';
 
 function header() {
     return (
-        <div></div>
+        <h1>
+            
+        </h1>
 
 
 
     );
 }
+
+export default header;
