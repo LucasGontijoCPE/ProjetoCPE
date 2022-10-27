@@ -1,0 +1,17 @@
+.produtos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.filtros {
+    display: flex;   
+    justify-content: baseline;
+    margin: 0px 20px;
+    font-size: 1rem;
+}
+
+body{
+    padding: 0px 50px
+}
