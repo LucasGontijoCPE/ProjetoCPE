@@ -1,8 +1,16 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../../public/fonte/Roboto/Roboto-Bold.ttf);
+}
+
 .Head{
     background-color: #005CB4;
     padding-left: 10%;
     padding-right: 10%;
+    height: 70px;
 }
+
+
 
 .MenuBar{
     display: grid;
@@ -14,6 +22,8 @@
     color: white;
     font-size: 20px;
     align-items: center;
+    font-family: Roboto;
+    
 }
 
 .Login{
