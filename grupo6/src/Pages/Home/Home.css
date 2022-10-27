@@ -1,13 +1,23 @@
 .Head{
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(100px,auto));
-    background-color: (255,234,28);
-    
+    background-color: #005CB4;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-#id{
+.MenuBar{
     display: grid;
-    grid-template-columns: 40px ;
-    max-width: 50px;
-    
+    grid-template-columns:repeat(auto-fit,minmax(100px,auto));
+    align-items: center;
+}
+
+.MenuTool{
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+.Login{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40px,auto));
+    align-items: center;
 }
