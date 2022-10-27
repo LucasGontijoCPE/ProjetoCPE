@@ -3,31 +3,57 @@
     src: url(../../../public/fonte/Roboto/Roboto-Bold.ttf);
 }
 
+
+
+.textos{
+    font-family: Roboto;
+    font-size: 20px;
+}
+
 .Head{
+    display: flex;
     background-color: #005CB4;
     padding-left: 10%;
     padding-right: 10%;
-    height: 70px;
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
 }
 
+.HeadItem{
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    
+}
+.grow1{
+    flex-grow: 1;
+}
 
+.grow2{
+    flex-grow: 5;
+}
 
 .MenuBar{
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(100px,auto));
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 100px;
 }
 
 .MenuTool{
     color: white;
-    font-size: 20px;
     align-items: center;
-    font-family: Roboto;
-    
+    width: auto;
+    flex-grow: 1;
 }
 
 .Login{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(40px,auto));
-    align-items: center;
+    max-width: 250px;
 }
