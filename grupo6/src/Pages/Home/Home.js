@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Head from './Head.js';
+import Head from '../../Utilitarios/Head.js';
 import "./Home.css"
 
 function Home() {

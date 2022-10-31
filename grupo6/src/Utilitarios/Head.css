@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../public/fonte/Roboto/Roboto-Bold.ttf);
+}
+
+.textos{
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.Head{
+    display: flex;
+    background-color: #005CB4;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+    min-height: 50px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.HeadLine{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Logo{
+    
+    width: auto;
+    margin: 5px;
+    padding-right: 80px;
+    align-items: center;
+}
+
+
+.MenuBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.Login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    text-decoration: none;
+
+}
+
+.SideMenuImage{
+    display: none;
+    min-width: 130px;
+    justify-content: space-between;
+}
+
+@media(max-width: 950px) {
+    .MenuBar{
+        display: none;
+    }
+    .SideMenuImage{
+        display: flex;
+    }
+    .HeadLine{
+        justify-content: space-between;
+    }
+}
+
+.SearchBar{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+}
+
+.Search{
+    width: 100%;
+    height: 100%;
+    padding: 7px 25px 10px 25px;
+    appearance: none;
+    cursor: text;
+    color: #757575;
+    font-size: 14px;
+    border: 0;
+    border-radius: 16px;
+}
+
+.Button{
+    cursor: pointer;
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    padding-right: 10px;
+}
+
+.SideMenu{
+    display: none;
+    overflow: hidden;
+    background-color: #005CB4;
+    padding: 0 18px;
+}
