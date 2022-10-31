@@ -50,9 +50,12 @@ h3 {
 ul h2{
     padding-top: 10px;
 }
+.filtro {
+    padding-top: 100px;
+}
 
 .filtro li {
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 5px;
 }
 
@@ -61,7 +64,7 @@ ul h2{
     display: inline-block;
 }
 
-.produtos{
+.produtos1{
     position: absolute;
     left: 230px;
     width: 1500px;
@@ -71,32 +74,32 @@ ul h2{
     padding-top: 150px;
 }
 
-.produtos li{
+.produtos1 li{
     display: inline-block;
     text-align: center;
     width: 20%;
     vertical-align: top;
-    margin: 0 2.5%;
+    margin: 2.5% 2.5%;
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
 }
 
-.produtos li:hover {
+.produtos1 li:hover {
     border-color: blue;
 }
 
-.produtos li:active {
+.produtos1 li:active {
     border-color: rgb(255, 251, 0);
-}
-
-.produtos li:hover {
-    font-size: 35px;
 }
 
 .imagema {
     width: 230px;
+}
+
+.imagema1 {
+    width: 162px;
 }
 
 .preco {
@@ -106,7 +109,7 @@ ul h2{
 }
 
 .descricao1 {
-    padding-top: 77px;
+    padding-top: 75px;
     font-size: 22px;
 }
 
@@ -123,4 +126,41 @@ ul h2{
     font-size: 22px;
 }
 
+.descricao5 {
+    padding-top: 86px;
+    font-size: 22px;
+}
+
+.descricao6 {
+    padding-top: 68px;
+    font-size: 22px;
+}
+
+.descricao7 {
+    padding-top: 9px;
+    font-size: 22px;
+}
+
+.descricao8 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.descricao9 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.descricao10 {
+    font-size: 22px;
+    padding-top: 87px;
+}
+
+footer {
+    position: absolute;
+    bottom: -1000px;
+    padding: 100px;
+    padding-right: 100%;
+    background-color: blue;
+}
 
