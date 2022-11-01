@@ -10,51 +10,25 @@
     font-size: 20px;
 }
 
-.Head{
+.Blocos{
     display: flex;
-    background-color: #005CB4;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: auto;
-    min-height: 50px;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    height: auto;
+    padding: 0 10%;
 }
 
-.HeadItem{
-    display: flex;
-    flex-direction: row;
-    width: 70px;
+.bl1{
+    height:954px;
+    background-image: url(/public/imagens/mascara.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: center;
+    background-position-y: top;
     
 }
-.grow1{
-    flex-grow: 1;
-}
 
-.grow2{
-    flex-grow: 5;
-}
-
-.MenuBar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-grow: 1;
-    flex-basis: auto;
-    width: 100px;
-}
-
-.MenuTool{
-    color: white;
-    align-items: center;
-    width: auto;
-    flex-grow: 1;
-}
-
-.Login{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(40px,auto));
-    max-width: 250px;
+.bl2{
+    height: 574.92px;
 }
