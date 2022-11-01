@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../../public/fonte/Roboto/Roboto-Bold.ttf);
+}
+
+.links{
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.links:hover{
+    cursor: pointer;
+    color: #ffea28;
+}
+
+.Head{
+    display: flex;
+    background-color: #005CB4;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+    min-height: 50px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.HeadLine{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Logo{
+    
+    width: auto;
+    margin: 5px;
+    padding-right: 80px;
+    align-items: center;
+}
+
+
+.MenuBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.Login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    text-decoration: none;
+
+}
+
+.SideMenuImage{
+    display: none;
+    min-width: 130px;
+    justify-content: space-between;
+}
+
+@media(max-width: 950px) {
+    .MenuBar{
+        display: none;
+    }
+    .SideMenuImage{
+        display:flex;
+    }
+    .HeadLine{
+        justify-content: space-between;
+    }
+}
+
+.SearchBar{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+}
+
+.Search{
+    width: 100%;
+    height: 100%;
+    padding: 7px 25px 10px 25px;
+    appearance: none;
+    cursor: text;
+    color: #757575;
+    font-size: 14px;
+    border: 0;
+    border-radius: 16px;
+}
+
+.Button{
+    cursor: pointer;
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    padding-right: 10px;
+}
+
+.SideMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #005CB4;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.SideMenu .links{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.SideMenu nav{
+    display: flex;
+    height: 100%;
+    max-height: 400px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0, 10px;
+    padding-top: 30px;
+}
+
+.SideMenu .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    margin-top: 10px;
+    margin-right: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+}
+
+.SideMenuTool{
+    
+    border-bottom: 1px solid #ffea28;
+}
+
+@media screen and (max-height: 450px) {
+    .SideMenu {padding-top: 15px;}
+    .SideMenu .links {font-size: 18px;}
+}
+
+.closebtn{ 
+    cursor: pointer;
+}
