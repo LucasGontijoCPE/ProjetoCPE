@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Head from '../../Utilitarios/Head.js';
+import Menu from '../../Utilitarios/Menu/Menu.js';
 import "./Home.css"
 
 function Home() {
     
     return (
     <div>
-        <Head/>
+        <Menu/>
 
 
         <h1>Home</h1>
