@@ -31,7 +31,7 @@ function Produtos() {
                                 <li>Bolsa</li>
                                 <li>Boné e Chapeus</li>
                                 <li>Outros</li>
-                                <h2>calçados:</h2>
+                                <h2>Calçados:</h2>
                                 <li>Futebol</li>
                                 <li>Futsal</li>
                                 <li>Basquete</li>
@@ -45,8 +45,16 @@ function Produtos() {
                                 <p className='p2'>Produtos:</p>
                                 <p className='p3'>Mostrando 12 de X</p>
                             </h3>
-                            <p className='p4'>Ordernar por:</p>
-                            
+
+                            <form>
+                                <legend>Ordenar por</legend>
+                                    <select>
+                                        <option>Preço</option>
+                                        <option>Ordem alfabética</option>
+                                        <option>Mais comprados</option>
+                                    </select>
+                            </form>
+
                             <ul className='produtos1'>
                                 <li>
                                     <img className='imagema' src='https://image.shutterstock.com/image-vector/vector-realistic-3d-white-silver-600w-1362216575.jpg' alt='garrafa térmica'/>

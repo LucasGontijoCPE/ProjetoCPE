@@ -5,7 +5,9 @@ header {
 
 main {
     display: inline-block;
+    width: 940px;
 }
+
 .t1{
     display: inline-block;
 }  
@@ -33,13 +35,14 @@ h3 {
     font-size: 14px;
 }
 
-.p4 {
+form {
     position: absolute;
-    display: inline;
-    top: 250px;
-    right: 90px;
-    font-weight: bold;
-    font-size: 14px;
+    top: 300px;
+    right: 250px;
+}
+
+form legend {
+    font-size: 20px;
 }
 
 .l2 {
@@ -49,14 +52,19 @@ h3 {
 
 ul h2{
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .filtro {
+    padding-left:0px;
     padding-top: 100px;
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
 }
 
 .filtro li {
     padding-left: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .titulo1 {
@@ -69,9 +77,8 @@ ul h2{
     left: 230px;
     width: 1500px;
     margin: 0 auto;
-    padding: 50px 0;
+    margin-top: 150px;
     vertical-align: top;
-    padding-top: 150px;
 }
 
 .produtos1 li{
@@ -79,15 +86,20 @@ ul h2{
     text-align: center;
     width: 20%;
     vertical-align: top;
-    margin: 2.5% 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 4.0%;
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 .produtos1 li:hover {
     border-color: blue;
+    transform: scale(1.03);
 }
 
 .produtos1 li:active {
