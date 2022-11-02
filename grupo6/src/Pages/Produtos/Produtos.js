@@ -1,19 +1,12 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import Menu from '../../Utilitarios/Menu/Menu.js';
 import "./produtos.css";
 
 function Produtos() {
     return (
         <div>
-            <head>
-                <h1>Produtos</h1>
-                <Link to="home">Home</Link>
-                <Link to="perfil">Perfil</Link>
-                <Link to="login">Login</Link>
-            </head>
                 <body>
-                    <header>
-                    </header>
+                    <Menu/>
                     <main>
                             <ul className='filtro'>
                                 <h2>Gênero:</h2>
@@ -46,7 +39,7 @@ function Produtos() {
                                 <p className='p3'>Mostrando 12 de X</p>
                             </h3>
 
-                            <form>
+                            <form className='ordenacao'>
                                 <legend>Ordenar por</legend>
                                     <select>
                                         <option>Preço</option>
