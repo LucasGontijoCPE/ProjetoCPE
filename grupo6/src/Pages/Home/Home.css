@@ -7,7 +7,7 @@
 
 .textos{
     font-family: Roboto;
-    font-size: 20px;
+    
 }
 
 .Blocos{
@@ -15,20 +15,100 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 0 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .bl1{
-    height:954px;
+    height: 650px;;
+    max-height: 954px;
+    min-height: 250px;
+    width: 100%;
     background-image: url(/public/imagens/mascara.png);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     background-color: #ffffff;
     background-position: center;
     background-position-y: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+    margin-bottom: 50px;
     
 }
 
-.bl2{
+.bl1-linha{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.texto-produtos{
+    display: flex;
+    flex-direction: column;
+    max-height: 50%;
+    height: 250px;
+    justify-content: space-between;
+    width: 60%;
+    text-align:left; 
+}
+
+.texto-produtos h2{
+    font-size: 22px;
+}
+
+.texto-produtos p{
+    font-size: 16px;
+}
+
+.Produtosbtn{
+    background-color: #ACACB1;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.ofertas{
     height: 574.92px;
+}
+
+.ofertas{
+ display: flex;
+ flex-direction: column;
+}
+
+.ofertas h2{
+    font-size: 22px;
+    margin-bottom: 5%;
+}
+
+.vitrineOfertas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    
+}
+
+.produtosOfertas{
+    background-color: #D9d9d9;
+    width: 23%;
+    padding-top: 23%;
+}
+
+@media(max-width:650px) {
+    .Blocos{padding-left: 5%;padding-right: 5%;}
+    .bl1{padding-bottom: 0;}
+    .texto-produtos{height: 100px; width: 100%;}
+    .texto-produtos p{font-size: 12px;}
+    .texto-produtos h2{font-size: 16px;}
+    .ofertas h2{font-size: 16px;}
+    .Produtosbtn{font-size: 12px; height: 18px; width: 50%;}
+    
+    .bl1{height: auto;}
 }
