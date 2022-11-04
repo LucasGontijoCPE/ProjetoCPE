@@ -72,13 +72,11 @@
     text-align: center;
 }
 
-.ofertas{
-    height: 574.92px;
-}
 
 .ofertas{
  display: flex;
  flex-direction: column;
+ height: auto;
 }
 
 .ofertas h2{
@@ -104,7 +102,7 @@
 @media(max-width:650px) {
     .Blocos{padding-left: 5%;padding-right: 5%;}
     .bl1{padding-bottom: 0;}
-    .texto-produtos{height: 100px; width: 100%;}
+    .texto-produtos{height: 90px; width: 100%;}
     .texto-produtos p{font-size: 12px;}
     .texto-produtos h2{font-size: 16px;}
     .ofertas h2{font-size: 16px;}
