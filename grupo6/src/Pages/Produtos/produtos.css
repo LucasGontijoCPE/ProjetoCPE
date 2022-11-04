@@ -1,0 +1,178 @@
+header {
+    padding: 100px;
+    background-color: blue;
+}
+
+main {
+    display: inline-block;
+    width: 940px;
+}
+
+.t1{
+    display: inline-block;
+}  
+
+ul {
+    display: inline-block;
+    padding-left: 30px;
+    list-style: none;
+    padding-top: 30px;
+    width: 150px;
+}
+
+h3 {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 60px;
+}
+.p2 {
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.p3 {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.ordenacao {
+    position: absolute;
+    top: 300px;
+    right: 250px;
+}
+
+.ordenacao legend {
+    font-size: 20px;
+}
+
+.l2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.filtro {
+    padding-left:0px;
+    padding-top: 100px;
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.filtro li {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.titulo1 {
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+.produtos1{
+    position: absolute;
+    left: 230px;
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    vertical-align: top;
+}
+
+.produtos1 li{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 4.0%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.produtos1 li:hover {
+    border-color: blue;
+    transform: scale(1.03);
+}
+
+.produtos1 li:active {
+    border-color: rgb(255, 251, 0);
+}
+
+.imagema {
+    width: 230px;
+}
+
+.imagema1 {
+    width: 162px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.descricao1 {
+    padding-top: 75px;
+    font-size: 22px;
+}
+
+.descricao2 {
+    font-size: 22px;
+}
+
+.descricao3 {
+    padding-top: 1px;
+    font-size: 22px;
+}
+.descricao4 {
+    padding-top: 79px;
+    font-size: 22px;
+}
+
+.descricao5 {
+    padding-top: 86px;
+    font-size: 22px;
+}
+
+.descricao6 {
+    padding-top: 68px;
+    font-size: 22px;
+}
+
+.descricao7 {
+    padding-top: 9px;
+    font-size: 22px;
+}
+
+.descricao8 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.descricao9 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.descricao10 {
+    font-size: 22px;
+    padding-top: 87px;
+}
+
+footer {
+    position: absolute;
+    bottom: -1000px;
+    padding: 100px;
+    padding-right: 100%;
+    background-color: blue;
+}
+
