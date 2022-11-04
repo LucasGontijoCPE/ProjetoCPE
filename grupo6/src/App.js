@@ -1,8 +1,7 @@
 import React from "react";
 import Routes from "./routes";
 import "./global.css"
-//import header from "./head"
-//import footer from "./footer"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return <Routes />;
