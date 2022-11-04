@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(../../../public/fonte/Roboto/Roboto-Bold.ttf);
+    src: url(../../../public/fonte/Roboto/Roboto-Regular.ttf);
 }
 
 
@@ -17,6 +17,7 @@
     height: auto;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 20px; 
 }
 
 .bl1{
@@ -33,8 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 5%;
-    margin-bottom: 50px;
+    padding-bottom: 2%;
     
 }
 
@@ -42,16 +42,18 @@
     display: flex;
     width: 100%;
     height: auto;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .texto-produtos{
     display: flex;
     flex-direction: column;
-    max-height: 50%;
-    height: 250px;
+    height: 160px;
     justify-content: space-between;
-    width: 60%;
-    text-align:left; 
+    width: 70%;
+    text-align:left;
+    
 }
 
 .texto-produtos h2{
@@ -74,14 +76,14 @@
 
 
 .ofertas{
- display: flex;
- flex-direction: column;
- height: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .ofertas h2{
     font-size: 22px;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 
 .vitrineOfertas{
