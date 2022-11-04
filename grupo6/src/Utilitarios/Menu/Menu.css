@@ -140,7 +140,12 @@
     color: white; 
     display: block; 
     transition: 0.3s; 
+    margin-bottom: 0;
 } 
+
+.Login .links{
+    margin-bottom: 0;
+}
  
 .SideMenu nav{ 
     display: flex; 
