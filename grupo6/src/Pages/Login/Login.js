@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 //import {Link} from "react-router-dom";
 import "./Login.css"
 import {Form, Button} from "react-bootstrap";
 
 function Login() {
+    const[email, setEmail]= useState();
+    const[password, setPassword]= useState();
+
+    function login(){
+        alert("Bem vindo! \n" + email);
+    }
+
     return (
         <div className="container">
     
@@ -11,14 +18,14 @@ function Login() {
                 <Form>
                 <h1>Minha conta</h1>
                 <Form.Group className="mb-3" controlId="email">
-                <Form.Control type="email" placeholder="E-mail" />
+                <Form.Control type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="senha">
-                <Form.Control type="password" placeholder="Senha" />
+                <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Group>
 
-                <Button variant="primary">Entrar</Button>
+                <Button variant="primary" onClick={login}>Entrar</Button>
                 <Button variant="light">Esqueceu a sua senha?</Button>
 
                </Form>
@@ -36,7 +43,7 @@ function Login() {
                 <Form.Control type="nickname" placeholder="Sobrenome" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="email">
+                <Form.Group className="mb-3" controlId="Cemail">
                 <Form.Control type="email" placeholder="E-mail" />
                 </Form.Group>
 
@@ -44,7 +51,7 @@ function Login() {
                 <Form.Control type="email" placeholder="Confirme seu E-mail" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="senha">
+                <Form.Group className="mb-3" controlId="Csenha">
                 <Form.Control type="password" placeholder="Senha" />
                 </Form.Group>
 
