@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 70px;
     
 }
 
@@ -24,3 +25,37 @@
 
 
 }
+
+.mobilebtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    border: 0;
+    background-color: white;
+}
+
+#EntradaID2{
+    display: none;
+}
+
+#CadastroID2{
+    display: flex;
+}
+
+#Desktop{
+    display: flex;
+}
+#Mobile{
+    display: none;
+}
+
+
+@media(max-width: 770px){
+    #EntradaID2{display: none;}
+    #CadastroID2{display: flex;}
+    #Desktop{display: none;}
+    #Mobile{display: flex;}
+}
+
+
