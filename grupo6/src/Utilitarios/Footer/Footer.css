@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../../public/fonte/Roboto/Roboto-Regular.ttf);
+}
+.footertxt{
+    font-family: Roboto;
+}
+
+.Footer{
+    background-image: url(/public/imagens/BGFooter.png);
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: center;
+    background-position-y: bottom;
+    width: 100%;
+    padding-top: 34.73%;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+
+.Footer h2{
+    color: #ffea28;
+    font-size: 24px;
+}
+.Footer p{
+    color: white;
+    font-size: 18px;
+}
+
+.footerlinks{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footerlinks:hover{
+    color: #ffea28;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height:fit-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    vertical-align:top;
+}
+
+.Contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Navegacao{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.Redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.imgetxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.imgetxt .footertxt{
+    padding-left: 5px;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+}
+
+@media(max-width: 1000px){
+    .Footer h2{font-size: 18px;}
+    .Footer p{font-size: 14px;}
+    .footerlinks{font-size: 14px;}
+    .icons{width: 15px;height: 15px;}
+}
+
+@media(max-width: 830px){
+    .Footer{background-image: none;background-color: #005cb4; height: max-content; padding-top: 30px;}
+    .infos{padding-left: 5%;padding-right: 5%;width: 100%;}
+    .Footer h2{font-size: 14px;}
+    .Footer p{font-size: 12px;}
+    .footerlinks{font-size: 12px;}
+    .icons{width: 10px;height: 10px;}
+    .imgetxt .footertxt{padding-left: 2px;}
+    .Navegacao{display: none;}
+}

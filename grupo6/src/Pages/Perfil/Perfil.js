@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from '../../Utilitarios/Menu/Menu';
+import Footer from '../../Utilitarios/Footer/Footer.js';
 import './Perfil.css';
 
 function Perfil() {
@@ -13,13 +14,14 @@ function Perfil() {
                 <div className='Perfil conteudo'>
                     <div className='Bloco'>
                         <h2 className='textos'>Visão Geral da Conta</h2>
-                        <label className='textos dados'>Nome: <input className='textos' type='text' name='Nome' value=''/></label>
-                        <label className='textos dados'>Sobrenome: <input className='textos dados' type='text' name='Sobrenome' value=''/></label>
-                        <label className='textos dados'>Email: <input className='textos' type='text' name='Email' value=''/></label>
+                        <label className='textos dados'>Nome: <input className='textos' type='text' name='Nome' value='Nome'/></label>
+                        <label className='textos dados'>Sobrenome: <input className='textos dados' type='text' name='Sobrenome' value='Sobrenome'/></label>
+                        <label className='textos dados'>Email: <input className='textos' type='text' name='Email' value='Email'/></label>
                     </div>
                     
                 </div>
             </div>
+            <Footer/>
     
         </div>
         

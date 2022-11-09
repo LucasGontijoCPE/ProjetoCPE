@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import "./Login.css"
 import {Form, Button} from "react-bootstrap";
 import Menu from '../../Utilitarios/Menu/Menu';
+import Footer from '../../Utilitarios/Footer/Footer.js';
 
 function Login() {
     const[email, setEmail]= useState();
@@ -146,7 +147,7 @@ function Login() {
             
 
             </div>
-
+            <Footer/>
         </div>
         
         );

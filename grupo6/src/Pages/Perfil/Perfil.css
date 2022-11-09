@@ -65,6 +65,8 @@
 .dados{
     font-size: 22px;
     border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -73,5 +75,11 @@
     border: none;
     flex-grow: 1;
     display: flex;
+    margin-left: 10px;
 }
 
+@media (max-width:346px){
+    .dados input{
+        width: 100%;
+    }
+}
