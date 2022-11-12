@@ -95,7 +95,7 @@
 }
 
 @media(max-width: 830px){
-    .Footer{background-image: none;background-color: #005cb4; height: max-content; padding-top: 30px;}
+    .Footer{background-image: none;background-color: #005cb4; height: max-content; padding-top: 30px; align-items: center; height:120px;}
     .infos{padding-left: 5%;padding-right: 5%;width: 100%;}
     .Footer h2{font-size: 14px;}
     .Footer p{font-size: 12px;}

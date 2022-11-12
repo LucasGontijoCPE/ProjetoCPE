@@ -51,7 +51,7 @@ function Menu(props){
             </div>
             <div id="mySidebar" className='SideMenu'>
                 <button className='closebtn' type='button' onClick={closeNav}>
-                    <img src='/imagens/closebtn.png' alt='Close Button'/>
+                    <img src='/imagens/closebtn.png' className='closeMenubtn' alt='Close Button'/>
                 </button>
 
                 <nav>
