@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
-//import {Link} from "react-router-dom";
 import "./Login.css"
 import {Form, Button} from "react-bootstrap";
 import Menu from '../../Utilitarios/Menu/Menu';
 import Footer from '../../Utilitarios/Footer/Footer.js';
+import api from "../../services/api";
 
 function Login() {
     const[email, setEmail]= useState();
     const[password, setPassword]= useState();
 
-    function login(){
+    async function login(e){
+        e.preventDefault();
+        try {
+            const response = await api.post('/login', {email, password});
+            console.log(response);
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
         alert("Bem vindo! \n" + email);
     }
 
