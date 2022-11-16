@@ -1,6 +1,6 @@
 @font-face { 
     font-family: Roboto; 
-    src: url(../../../public/fonte/Roboto/Roboto-Bold.ttf); 
+    src: url(../../../public/fonte/Roboto/Roboto-Black.ttf); 
 } 
  
 .links{ 
@@ -58,9 +58,10 @@
 .Login{ 
     display: flex; 
     flex-direction: row; 
-    justify-content: space-around; 
+    justify-content: flex-start; 
+    gap: 10px;
     align-items: center; 
-    width: 250px; 
+    width: 200px; 
     text-decoration: none; 
  
 } 
@@ -147,6 +148,7 @@
 
 .Login .links{
     margin-bottom: .0rem;
+    
 }
  
 .SideMenu nav{ 

@@ -4,18 +4,24 @@ import {Form, Button} from "react-bootstrap";
 import Menu from '../../Utilitarios/Menu/Menu';
 import Footer from '../../Utilitarios/Footer/Footer.js';
 import api from "../../services/api";
+import {login} from "../../services/auth";
 import { useHistory } from 'react-router-dom';
 
 function Login() {
     const[email, setEmail]= useState();
     const[password, setPassword]= useState();
+    const[nome, setNome] = useState();
+    const[sobrenome, setSobrenome] = useState();
+    const[email2, setEmail2]= useState();
+    const[password2, setPassword2]= useState();
     const history = useHistory();
 
-    async function login(e){
+    async function handlelogin(e){
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
             alert("Bem vindo! \n" + response.data.user.name);
+            login(response.data.accessToken);
             history.push("/home");
         } catch (error) {
             if(error.response.status === 403){
@@ -27,6 +33,25 @@ function Login() {
             
         }
         
+    }
+
+    async function handleCadastro(e){
+        e.preventDefault();
+        if(email !== email2){
+            alert("Os emails informados são diferentes");
+        }else if(password !== password2){
+            alert("As senhas informadas são diferentes");
+        }else{
+            try {
+                const name = nome +" "+ sobrenome;
+                await api.post('/users', {name, email, password});
+                alert("Cadastrado com sucesso! \n");
+            } catch (error) {
+                alert(error.response.data.notification);
+                console.warn(error);
+                
+            }
+        }  
     }
 
     function openLogin(){
@@ -41,7 +66,7 @@ function Login() {
 
 
     return (
-        <div>
+        <div id='BODY'>
             <Menu/>
             <div id="Desktop" className="container">
         
@@ -56,7 +81,7 @@ function Login() {
                     <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
                     </Form.Group>
 
-                    <Button variant="primary" onClick={login}>Entrar</Button>
+                    <Button variant="primary" onClick={handlelogin}>Entrar</Button>
                     <Button variant="light">Esqueceu a sua senha?</Button>
                     
                 </Form>
@@ -68,30 +93,30 @@ function Login() {
                     <Form>
                     <h1>Cadastre-se agora</h1>
                     <Form.Group className="mb-3" controlId="nome">
-                    <Form.Control type="nickname" placeholder="Nome" />
+                    <Form.Control type="nickname" placeholder="Nome" onChange={(e)=> setNome(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="sobrenome">
-                    <Form.Control type="nickname" placeholder="Sobrenome" />
+                    <Form.Control type="nickname" placeholder="Sobrenome" onChange={(e)=> setSobrenome(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="Cemail">
-                    <Form.Control type="email" placeholder="E-mail" />
+                    <Form.Control type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="confemail">
-                    <Form.Control type="email" placeholder="Confirme seu E-mail" />
+                    <Form.Control type="email" placeholder="Confirme seu E-mail" onChange={(e) => setEmail2(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="Csenha">
-                    <Form.Control type="password" placeholder="Senha" />
+                    <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="confsenha">
-                    <Form.Control type="password" placeholder="Confirme sua senha" />
+                    <Form.Control type="password" placeholder="Confirme sua senha" onChange={(e) => setPassword2(e.target.value)}/>
                     </Form.Group>
 
-                    <Button variant="primary">Criar conta</Button>
+                    <Button variant="primary" onClick={handleCadastro}>Criar conta</Button>
                     
 
                     </Form>
@@ -115,7 +140,7 @@ function Login() {
                     <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
                     </Form.Group>
 
-                    <Button variant="primary" onClick={login}>Entrar</Button>
+                    <Button variant="primary" onClick={handlelogin}>Entrar</Button>
                     <Button variant="light">Esqueceu a sua senha?</Button>
                     
                 </Form>
@@ -128,30 +153,31 @@ function Login() {
                     <Form>
                     <h1>Cadastre-se agora</h1>
                     <Form.Group className="mb-3" controlId="nome">
-                    <Form.Control type="nickname" placeholder="Nome" />
+                    <Form.Control type="nickname" placeholder="Nome" onChange={(e)=> setNome(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="sobrenome">
-                    <Form.Control type="nickname" placeholder="Sobrenome" />
+                    <Form.Control type="nickname" placeholder="Sobrenome" onChange={(e)=> setSobrenome(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="Cemail">
-                    <Form.Control type="email" placeholder="E-mail" />
+                    <Form.Control type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="confemail">
-                    <Form.Control type="email" placeholder="Confirme seu E-mail" />
+                    <Form.Control type="email" placeholder="Confirme seu E-mail" onChange={(e) => setEmail2(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="Csenha">
-                    <Form.Control type="password" placeholder="Senha" />
+                    <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="confsenha">
-                    <Form.Control type="password" placeholder="Confirme sua senha" />
+                    <Form.Control type="password" placeholder="Confirme sua senha" onChange={(e) => setPassword2(e.target.value)}/>
                     </Form.Group>
 
-                    <Button variant="primary">Criar conta</Button>
+
+                    <Button variant="primary" onClick={handleCadastro}>Criar conta</Button>
                     
 
                     </Form>

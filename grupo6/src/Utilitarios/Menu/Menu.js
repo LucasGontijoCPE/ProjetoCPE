@@ -26,9 +26,9 @@ function Menu(props){
                         <Link to="home" className=' links'>Home</Link>
                         <Link to="produtos" className=' links'>Produtos</Link>
                         <h6 className='links'>Sobre nós</h6>
-                        <Link to="login" className='Login'>
-                            <img src='/imagens/Login.png' alt='Login'/>
-                            <h2 className='links'>Entre ou Cadastre-se</h2>
+                        <Link to="perfil" className='Login'>
+                            <img src='/imagens/Login.png' alt='Perfil'/>
+                            <h2 className='links'>Meu Perfil </h2>
                         </Link>
                         <img src='/imagens/Kart.png' alt='Kart'/>
                     </nav>

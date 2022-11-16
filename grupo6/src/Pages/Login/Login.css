@@ -49,8 +49,19 @@
 #Mobile{
     display: none;
     padding-bottom: 20px;
+    height: 100%;
 }
 
+#Desktop .container{
+    display: flex;
+}
+
+#BODY{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
 @media(max-width: 770px){
     #EntradaID2{display: none;}
