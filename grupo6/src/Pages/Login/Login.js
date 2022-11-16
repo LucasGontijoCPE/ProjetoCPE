@@ -4,21 +4,29 @@ import {Form, Button} from "react-bootstrap";
 import Menu from '../../Utilitarios/Menu/Menu';
 import Footer from '../../Utilitarios/Footer/Footer.js';
 import api from "../../services/api";
+import { useHistory } from 'react-router-dom';
 
 function Login() {
     const[email, setEmail]= useState();
     const[password, setPassword]= useState();
+    const history = useHistory();
 
     async function login(e){
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
-            console.log(response);
+            alert("Bem vindo! \n" + response.data.user.name);
+            history.push("/home");
         } catch (error) {
+            if(error.response.status === 403){
+                alert("Credenciais Invalidas!");
+            }else {
+                alert(error.response.data.notification);
+            }
             console.warn(error);
-            alert(error.message);
+            
         }
-        alert("Bem vindo! \n" + email);
+        
     }
 
     function openLogin(){
