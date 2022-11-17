@@ -50,7 +50,7 @@
     padding-left: 15%;
     padding-right: 15%;
     vertical-align:top;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
 }
 
 .Contato{
@@ -107,5 +107,15 @@
     .footerlinks{font-size: 12px;}
     .icons{width: 10px;height: 10px;}
     .imgetxt .footertxt{padding-left: 2px;}
+    
+}
+
+@media(max-width: 600px){
     .Navegacao{display: none;}
+    .infos{padding-left: 10%;padding-right: 10%;width: 100%;}
+}
+
+@media(min-width: 1400px){
+    .Footer h2{font-size: 30px;}
+    .Footer p{font-size: 26px;}
 }

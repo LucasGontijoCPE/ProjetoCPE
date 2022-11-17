@@ -3,7 +3,12 @@
     src: url(../../../public/fonte/Roboto/Roboto-Regular.ttf);
 }
 
-
+.BODY{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
 .textos{
     font-family: Roboto;
@@ -20,6 +25,7 @@
     padding-right: 10%;
     margin-bottom: 20px;
     padding-top: 10px; 
+    padding-bottom: 20px;
 }
 
 .bl1{
@@ -83,6 +89,7 @@
     flex-direction: column;
     height: auto;
     padding-bottom: 10px;
+    flex-grow: 1;
 }
 
 .ofertas h2{
@@ -100,10 +107,19 @@
 }
 
 .produtosOfertas{
-    background-color: #D9d9d9;
+    border: 1px solid black;
+    border-radius: 16px;
     width: 23%;
-    padding-top: 23%;
+    
 }
+
+.produtosOfertas .imgProd{
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+
 
 @media(max-width:650px) {
     .Blocos{padding-left: 5%;padding-right: 5%;}

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { isAuthenticated,getUserNome} from '../../services/auth';
 import "./Menu.css"
 
 function Menu(props){
@@ -14,7 +15,13 @@ function Menu(props){
         document.getElementById("mySidebar").style.width = "0px";
         
     }
-
+    var perf2
+    if(isAuthenticated()){
+        perf2 = getUserNome();   
+    }else{
+        perf2 = "Entre ou cadastre-se";  
+    }
+    const perf = perf2;
     return(
         <div>
             <div className='Head'>
@@ -27,8 +34,8 @@ function Menu(props){
                         <Link to="produtos" className=' links'>Produtos</Link>
                         <h6 className='links'>Sobre nós</h6>
                         <Link to="perfil" className='Login'>
-                            <img src='/imagens/Login.png' alt='Perfil'/>
-                            <h2 className='links'>Meu Perfil </h2>
+                            <img id='imgLogIn' src='/imagens/Login.png' alt='Perfil'/>
+                            <h2 className='links'>{perf}</h2>
                         </Link>
                         <img src='/imagens/Kart.png' alt='Kart'/>
                     </nav>
@@ -55,8 +62,8 @@ function Menu(props){
                 </button>
 
                 <nav>
+                    <Link to="perfil" className='links SideMenuTool'>{perf}</Link>
                     <Link to="home" className='links SideMenuTool'>Home</Link>
-                    <Link to="perfil" className='links SideMenuTool'>Perfil</Link>
                     <Link to="produtos" className='links SideMenuTool'>Produtos</Link>
                 </nav>
                 

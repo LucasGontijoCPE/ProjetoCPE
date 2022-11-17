@@ -8,10 +8,10 @@ function Footer(){
             <div className='infos'>
                 <div className='Contato'>
                     <h2>Contatos:</h2>
-                    <p className='footertxt'>Tel: (XX)XXXX-XXXX</p>
+                    <p className='footertxt'>Tel: (31)9999-9999</p>
                     <div className='imgetxt'> 
                         <img className='icons' src='/imagens/wppLogo.png' alt='Whatsapp'/>
-                        <p className='footertxt'>: (XX)XXXXX-XXXX</p>
+                        <p className='footertxt'>: (31)99999-9999</p>
                     </div>
                     <div className='imgetxt'>
                         <img className='icons' src='/imagens/LocIcon.png' alt='Localização'/>

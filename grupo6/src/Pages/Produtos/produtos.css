@@ -45,6 +45,12 @@
 .filtros h2{
     font-size: 22px;
 }
+.filtros h2:hover{
+    cursor: default;
+}
+.filtros li:hover{
+    cursor: pointer;
+}
 
 .Produtos{
     display: flex;
@@ -82,6 +88,9 @@
 .imagema {
     width: 100%;
     border-radius: 16px;
+    height: 55%;
+    max-height: 157px;
+    align-items: baseline;
 }
 
 .produtos1 li{
@@ -97,6 +106,19 @@
     transition: 1s all;
     cursor: pointer;
 }
+
+.dprodDescr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.dprodDescr p{
+    width: auto;
+    text-justify: center;
+}
+
 
 .produtos1 li:hover {
     border-color: blue;

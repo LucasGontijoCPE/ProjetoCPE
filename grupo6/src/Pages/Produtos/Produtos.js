@@ -61,7 +61,7 @@ function Produtos() {
                                 </button>
                                 <div className='itens'>
                                     <h2>Produtos:</h2>
-                                    <p>Mostrando 12 de X</p>
+                                    <p>Mostrando 12 de 12</p>
                                 </div>
 
                                 <form className='ordenacao'>
@@ -76,99 +76,98 @@ function Produtos() {
 
                             <ul className='produtos1'>
                                 <li>
-                                    <img className='imagema' src='https://image.shutterstock.com/image-vector/vector-realistic-3d-white-silver-600w-1362216575.jpg' alt='garrafa térmica'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Garrafa Térmica</p>
-                                        <p className='preco'>R$ 85,00</p>
-                                    </div>
+                                    <img className='imagema' src='https://images-ext-2.discordapp.net/external/6dElYvgBNvVIPDfA2WiQ8DFgp9qS6lG9Gc_ocecfaCE/%3Fv%3D1617987596/https/cdn.vnda.com.br/680x/kouda/2021/04/09/13_4_8_806_GarrafaTrmicaInoxKouda500mlGreyRoseGold1037314100_01.jpg?width=473&height=473' alt='garrafa térmica'/>
+                                    <p className='descricao'>Garrafa Térmica</p>
+                                    <p className='preco'>R$ 85,00</p>
+                                    
                                     
                                 </li>
                                 <li>
-                                    <img className='imagema' src='https://image.shutterstock.com/image-vector/vector-black-mock-backpack-bag-600w-1065870533.jpg' alt='bolsa esportiva'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Bolsa Esportiva</p>
-                                        <p className='preco'>R$ 90,00</p>   
-                                    </div>
+                                    <img className='imagema' src='https://images-ext-1.discordapp.net/external/Qkl2337rbbAmZECCH9r6xQqk3m0FGsO5zGV1_oGVae8/https/img.ltwebstatic.com/images3_pi/2022/04/13/16498200099b0d2c2a4d8c8c890410220e655f79f8_thumbnail_600x.webp?width=355&height=473' alt='bolsa esportiva'/>
+         
+                                    <p className='descricao'>Bolsa Esportiva</p>
+                                    <p className='preco'>R$ 90,00</p>   
+                                    
                                     
                                 </li>
                                 <li>
-                                    <img className='imagema' src='https://image.shutterstock.com/image-photo/just-place-your-picture-on-600w-2178940433.jpg' alt='tenis laranja'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Tenis Laranja</p>
-                                        <p className='preco'>R$ 240,00</p>   
-                                    </div>
+                                    <img className='imagema' src='https://images-ext-1.discordapp.net/external/qnpzgLyJLi3ZdTMC1OHAONImxj2ec5fV1hKCgXwAhfo/https/maze.cdn.plataformaneo.com.br/produto/multifotos/hd/20220406144100_1092998908_DZ.png?width=473&height=473' alt='tenis laranja'/>
+                                    
+                                    <p className='descricao'>Tenis Laranja</p>
+                                    <p className='preco'>R$ 240,00</p>   
+               
                                     
                                 </li>
                                 <li>
-                                    <img className='imagema' src='https://image.shutterstock.com/image-photo/kyiv-ukraine-march12-2021-studio-600w-1935521242.jpg' alt='tenis de corrida'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Tenis de Corrida</p>
-                                        <p className='preco'>R$ 220,00</p>  
-                                    </div>
+                                    <img className='imagema' src='https://images-ext-2.discordapp.net/external/S7vXRjI8TuweEtX1JNgphJG4Fq9nmqnJZMAms1DisWg/https/www.diariodoaco.com.br/images/noticias/95290/20220221075625_evTrRh8rgK.jpg?width=631&height=473' alt='tenis de corrida'/>
+                                    
+                                    <p className='descricao'>Tenis de Corrida</p>
+                                    <p className='preco'>R$ 220,00</p>  
+               
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://cdn.pixabay.com/photo/2016/03/09/13/47/running-watch-1246430__340.png' alt='Relógio'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Relógio</p>
-                                        <p className='preco'>R$ 300,00</p> 
-                                    </div>
+                                    
+                                    <p className='descricao'>Relógio</p>
+                                    <p className='preco'>R$ 300,00</p> 
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://cdn.pixabay.com/photo/2016/04/12/16/57/tent-1324847__340.jpg' alt='Cabana'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Cabana</p>
-                                        <p className='preco'>R$ 150,00</p> 
-                                    </div>
+                                    
+                                    <p className='descricao'>Cabana</p>
+                                    <p className='preco'>R$ 150,00</p> 
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://cdn.pixabay.com/photo/2016/10/26/17/52/shoe-1772074__340.jpg' alt='tenis Infantil'/>
-                                    <div className='prodDescr'>
+                                    
                                         <p className='descricao'>Tenis Infantil</p>
                                         <p className='preco'>R$ 100,00</p> 
-                                    </div>
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://media.istockphoto.com/photos/closeup-of-a-pair-of-black-leather-football-boots-isolated-on-white-picture-id1404635567?b=1&k=20&m=1404635567&s=170667a&w=0&h=wfFqqR8l9vPLbvQURTI1C8Bjr_T7dmN8-0WIgJvuYB0=' alt='Chuteira'/>
                                     
-                                    <div className='prodDescr'>
+                                    
                                         <p className='descricao'>Chuteira</p>
                                         <p className='preco'>R$ 170,00</p>
-                                    </div>
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS1xB8D52z1ilphOm74bFCHPSxRdxIBieU3w&usqp=CAU' alt='Bola de futebol'/>
-                                    <div className='prodDescr'>
+                                    
                                         <p className='descricao'>Bola de Futebol</p>
                                         <p className='preco'>R$ 120,00</p>
-                                    </div>
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKto8dghcQ5TxnkAMkH-zZmaxuF6LM8sri3Sf_1V2D9vz99oXNR_UoZDEHsfEEYKbRBOM&usqp=CAU' alt='Caneleira'/>
-                                    <div className='prodDescr'>
+                                    
                                         <p className='descricao'>Caneleira</p>
                                         <p className='preco'>R$ 40,00</p>
-                                    </div>
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThA61RCKPU6jWUNyo66yHN2xBC0VoHsrJQgg&usqp=CAU' alt='roupa de surf'/>
-                                    <div className='prodDescr'>
+                                    
                                         <p className='descricao'>Roupa de Surf</p>
                                         <p className='preco'>R$ 270,00</p> 
-                                    </div>
+               
                                     
                                 </li>
                                 <li>
                                     <img className='imagema' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLoZmFHP2RyVD_Po5tG3L3wtIJeEOm6VdFug&usqp=CAU' alt='Cesta mais bola de basquete'/>
-                                    <div className='prodDescr'>
-                                        <p className='descricao'>Cesta + Bola de basquete</p>
-                                        <p className='preco'>R$ 440,00</p>
-                                    </div>
+                                    
+                                    <p className='descricao'>Kit basquete</p>
+                                    <p className='preco'>R$ 440,00</p>
+                        
                                     
                                 </li>
                             </ul>
