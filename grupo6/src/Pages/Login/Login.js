@@ -4,14 +4,14 @@ import {Form, Button} from "react-bootstrap";
 import Menu from '../../Utilitarios/Menu/Menu';
 import Footer from '../../Utilitarios/Footer/Footer.js';
 import api from "../../services/api";
-import {login} from "../../services/auth";
+import {login,setUserNome,setUserEmail,setUserSobrenome} from "../../services/auth";
 import { useHistory } from 'react-router-dom';
 
 function Login() {
     const[email, setEmail]= useState();
     const[password, setPassword]= useState();
-    const[nome, setNome] = useState();
-    const[sobrenome, setSobrenome] = useState();
+    const[name, setName] = useState();
+    const[lastname, setSobrenome] = useState();
     const[email2, setEmail2]= useState();
     const[password2, setPassword2]= useState();
     const history = useHistory();
@@ -21,6 +21,9 @@ function Login() {
         try {
             const response = await api.post('/login', {email, password});
             alert("Bem vindo! \n" + response.data.user.name);
+            setUserNome(response.data.user.name);
+            setUserSobrenome(response.data.user.lastname);
+            setUserEmail(response.data.user.email);
             login(response.data.accessToken);
             history.push("/home");
         } catch (error) {
@@ -43,8 +46,7 @@ function Login() {
             alert("As senhas informadas são diferentes");
         }else{
             try {
-                const name = nome +" "+ sobrenome;
-                await api.post('/users', {name, email, password});
+                await api.post('/users', {name,lastname, email, password});
                 alert("Cadastrado com sucesso! \n");
             } catch (error) {
                 alert(error.response.data.notification);
@@ -93,7 +95,7 @@ function Login() {
                     <Form>
                     <h1>Cadastre-se agora</h1>
                     <Form.Group className="mb-3" controlId="nome">
-                    <Form.Control type="nickname" placeholder="Nome" onChange={(e)=> setNome(e.target.value)}/>
+                    <Form.Control type="nickname" placeholder="Nome" onChange={(e)=> setName(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="sobrenome">
@@ -153,7 +155,7 @@ function Login() {
                     <Form>
                     <h1>Cadastre-se agora</h1>
                     <Form.Group className="mb-3" controlId="nome">
-                    <Form.Control type="nickname" placeholder="Nome" onChange={(e)=> setNome(e.target.value)}/>
+                    <Form.Control type="nickname" placeholder="Nome" onChange={(e)=> setName(e.target.value)}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="sobrenome">

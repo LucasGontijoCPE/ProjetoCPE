@@ -56,7 +56,6 @@ function Menu(props){
 
                 <nav>
                     <Link to="home" className='links SideMenuTool'>Home</Link>
-                    <Link to="login" className='links SideMenuTool'>Login</Link>
                     <Link to="perfil" className='links SideMenuTool'>Perfil</Link>
                     <Link to="produtos" className='links SideMenuTool'>Produtos</Link>
                 </nav>

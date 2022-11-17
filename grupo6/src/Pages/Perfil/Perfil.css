@@ -58,6 +58,16 @@
     justify-content: flex-start;
 }
 
+.Bloco button{
+    text-decoration: none;
+    color: white;
+    border: none;
+    background-color: #005cb4;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 0 5px;
+}
+
 .Perfil{
     justify-content: center;
 

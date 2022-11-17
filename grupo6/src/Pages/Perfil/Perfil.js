@@ -1,9 +1,22 @@
 import React from 'react';
 import Menu from '../../Utilitarios/Menu/Menu';
 import Footer from '../../Utilitarios/Footer/Footer.js';
+import { logout,getUserNome,getUserEmail,getUserSobrenome,removeUserEmail,removeUserNome,removeUserSobrenome} from '../../services/auth';
+import { useHistory } from 'react-router-dom';
 import './Perfil.css';
 
 function Perfil() {
+    const nome = getUserNome();
+    const sobrenome = getUserSobrenome();
+    const email = getUserEmail();
+    const history = useHistory();
+    async function exit(){
+        removeUserNome();
+        removeUserSobrenome();
+        removeUserEmail();
+        logout();
+        history.push("/login");
+    }
     return (
         <div>
             <Menu/>
@@ -13,10 +26,11 @@ function Perfil() {
                 </div>
                 <div className='Perfil conteudo'>
                     <div className='Bloco'>
-                        <h2 className='textos'>Visão Geral da Conta</h2>
-                        <label className='textos dados'>Nome: <input className='textos' type='text' name='Nome' value='Nome'/></label>
-                        <label className='textos dados'>Sobrenome: <input className='textos dados' type='text' name='Sobrenome' value='Sobrenome'/></label>
-                        <label className='textos dados'>Email: <input className='textos' type='text' name='Email' value='Email'/></label>
+                        <h2 className='textos'>Visão Geral</h2>
+                        <label className='textos dados'>Nome: <p className='textos'  name='Nome'>{nome}</p></label>
+                        <label className='textos dados'>Sobrenome: <p className='textos '  name='Sobrenome'>{sobrenome}</p></label>
+                        <label className='textos dados'>Email: <p className='textos'  name='Email'>{email}</p></label>
+                        <button className='textos' onClick={exit}>Sair da minha conta</button>
                     </div>
                     
                 </div>
