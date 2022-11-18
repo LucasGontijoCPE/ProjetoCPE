@@ -191,6 +191,11 @@
     font-size: 16px;
 }
 
+#closefiltro{
+    width: 20px;
+    height: 20px;
+}
+
 @media(max-width: 850px){
     #dsktFiltro{display: none;}
     .produtos1{grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr 1fr; gap: 15px; padding-left: 0;}

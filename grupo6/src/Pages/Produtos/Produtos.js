@@ -181,7 +181,7 @@ function Produtos() {
                 </div>
             <div id="mblFiltro" className='filtro'>
                 <button className='closebtn' type='button' onClick={closeFiltros}>
-                    <img src='/imagens/closebtn.png' alt='Fechar filtros'/>
+                    <img id='closefiltro' src='/imagens/closebtn.png' alt='Fechar filtros'/>
                 </button>
                 <div className='filtros' >
                     <h2>Gênero:</h2>
